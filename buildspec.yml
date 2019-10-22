@@ -3,6 +3,13 @@ phases:
   pre_build:
     commands:
       - composer install
+  install:
+    runtime-versions:
+        php: 7.3
   build:
     commands:
+      - php --version
       - phpunit tests
+artifacts:
+  files:
+    -  README.md
