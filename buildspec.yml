@@ -9,7 +9,6 @@ phases:
   build:
     commands:
       - php --version
-      - phpunit tests
 artifacts:
   files:
     -  README.md
