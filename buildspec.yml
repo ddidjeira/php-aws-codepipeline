@@ -14,3 +14,4 @@ artifacts:
     -  README.md
     -  appspec.yml
     -  scripts/*.sh
+    -  *
