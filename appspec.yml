@@ -6,18 +6,18 @@ files:
     overwrite: true
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: ./scripts/install_dependencies.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: scripts/install_composer_dependencies.sh
+    - location: ;/scripts/install_composer_dependencies.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/start_server.sh
+    - location: ./scripts/start_server.sh
       timeout: 30
       runas: root
   ApplicationStop:
-    - location: scripts/stop_server.sh
+    - location: ./scripts/stop_server.sh
       timeout: 30
       runas: root
